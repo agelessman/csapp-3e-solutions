@@ -5,7 +5,7 @@
    Assume w = 32.
 */
 int any_odd_one(unsigned x) {
-    return !!(x & 0x55555555);
+    return (x & 0x55555555) != 0;
 }
 
 int main(void) {
